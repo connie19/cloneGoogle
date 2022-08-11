@@ -1,0 +1,208 @@
+/* DEFAULT */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: rgba(0,0,0,.87);
+}
+
+.google_nav, .google_nav li, .products-link, .google_container, .google_container form label, .search-btn, footer div ul, .footer_links{
+    display: flex;
+}
+
+.google_nav li, .google_container, .google_container form label{
+    align-items: center;
+}
+
+.products-link, .google_container, .google_container form label, .search-btn, footer div ul{
+    justify-content: center;
+}
+
+.google_container, .google_container form, #search, .search-btn, footer, .country {
+    width: 100%;
+}
+
+/* NAVBAR */
+nav{
+    padding: 6px;
+    height: 60px;
+}
+
+.google_nav{
+    list-style: none;
+    justify-content: right;
+    justify-items: center;
+    font-size: 1.3rem;
+}
+
+li a{
+    text-decoration: none;
+    margin-left: 15px;
+    color: rgba(0,0,0,.87);
+}
+
+.products-link{
+    padding: 4px;
+    align-self: center;
+}
+
+.products-link i{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    color: #5f6368;
+}
+
+.products-link:hover{
+    border-radius: 50%;
+    background-color: rgba(209, 209, 209, 0.534);
+}
+
+.login-btn{
+    padding: 9px 15px;
+    margin-right: 8px;
+    min-width: 80px;
+    color: white;
+    font-weight: 700;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.login-btn:hover{
+    background: #2b7de9;
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,.3),0 1px 3px 1px rgba(66,133,244,.15);
+}
+
+/*FORMULARIO DE GOOGLE*/
+.google_container{
+    flex-direction: column;
+    margin: 18vh 0;
+}
+
+.google_container img{
+    max-width: 67%;
+    min-height: 100%;
+    max-height: 92px;
+    width: auto;
+    margin-bottom: 8px;
+}
+
+.google_container form{
+    padding: 20px;
+    max-height: 160px;
+}
+
+.google_container form label{
+    border: 1px solid #dfe1e5;
+    padding: 5px 8px 5px 14px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    max-width: 584px;
+    margin: auto;
+}
+
+.google_container form label span i{
+    margin-right: 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #9da0a3;
+    font-size: 2rem;
+}
+
+#search{
+    height: 34px;
+    border: 0px solid transparent;
+    font-size: 1.6rem;
+
+}
+
+#search:active, #search:focus, .google_container form label input:checked{
+    outline: none;
+    border: 0px solid transparent;
+}
+
+.google_container form label:hover{
+    box-shadow: 0 1px 6px rgb(32, 33, 36, .28);
+    border-color: rgb(223, 225, 229, 0);
+}
+
+.search-btn input{
+    padding: 0px 16px;
+    margin: 30px 4px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    height: 36px;
+    min-width: 54px;
+    line-height: 27px;
+    color: #3c4043;
+    cursor: pointer;
+}
+
+.search-btn input:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/*  FOOTER */
+footer{
+    background-color: #f2f2f2;
+    color: #70757a;
+    position: absolute;
+    bottom: 0;
+}
+
+.country{
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 1.5rem;
+}
+
+footer div ul{
+    flex-wrap: wrap;
+}
+
+footer div ul li{
+    display: inline-flex;
+}
+
+footer div ul li a{
+    color: #70757a;
+    padding: 15px;
+}
+
+.footer_links{
+    padding: 0 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+@media(min-width:863px) {
+    .footer_links{
+        display: inline-flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer_links ul li a{
+        margin-left: 0;
+    }
+
+    .login-btn{
+        padding: 9px 23px;
+    }
+}
