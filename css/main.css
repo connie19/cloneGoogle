@@ -38,9 +38,7 @@ nav{
 }
 
 .google_nav{
-    list-style: none;
     justify-content: right;
-    justify-items: center;
     font-size: 1.3rem;
 }
 
@@ -52,7 +50,6 @@ li a{
 
 .products-link{
     padding: 4px;
-    align-self: center;
 }
 
 .products-link i{
@@ -86,7 +83,7 @@ li a{
 /*FORMULARIO DE GOOGLE*/
 .google_container{
     flex-direction: column;
-    margin: 18vh 0;
+    margin: 16.9vh 0;
 }
 
 .google_container img{
