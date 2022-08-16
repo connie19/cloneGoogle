@@ -15,7 +15,7 @@ body{
     color: rgba(0,0,0,.87);
 }
 
-.google_nav, .google_nav li, .products-link, .google_container, .google_container form label, .search-btn, footer div ul, .footer_links{
+.google_nav, .google_nav li, .products-link, .google_container, .google_container form label, .search-btn, footer div ul, .footer_links, header{
     display: flex;
 }
 
@@ -32,13 +32,16 @@ body{
 }
 
 /* NAVBAR */
+header{
+    justify-content: end;
+}
+
 nav{
     padding: 6px;
     height: 60px;
 }
 
 .google_nav{
-    justify-content: right;
     font-size: 1.3rem;
 }
 
