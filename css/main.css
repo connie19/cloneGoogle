@@ -74,7 +74,7 @@ li a{
 .profile-btn{
     margin-right: 8px;
     margin-left: 6px;
-    background-image: url("/img/img_profile.png");
+    background-image: url("../img/img_profile.png");
     background-repeat: no-repeat;
     background-size: 32px;
     background-position: center;
