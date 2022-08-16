@@ -15,33 +15,37 @@ body{
     color: rgba(0,0,0,.87);
 }
 
-.google_nav, .google_nav li, .products-link, .google_container, .google_container form label, .search-btn, footer div ul, .footer_links, header{
+.google_nav-right, .google_nav-right li, .products-link, .google_container, 
+.google_container form label, .search-btn, footer div ul, .footer_links, 
+header nav{
     display: flex;
 }
 
-.google_nav li, .google_container, .google_container form label{
+.google_nav-right li, .google_container, .google_container form label{
     align-items: center;
 }
 
-.products-link, .google_container, .google_container form label, .search-btn, footer div ul{
+.products-link, .google_container, .google_container form label, .search-btn, 
+footer div ul{
     justify-content: center;
 }
 
-.google_container, .google_container form, #search, .search-btn, footer, .country {
+.google_container, .google_container form, #search, .search-btn, footer, 
+.country, header {
     width: 100%;
 }
 
 /* NAVBAR */
 header{
-    justify-content: end;
-}
-
-nav{
-    padding: 6px;
     height: 60px;
 }
 
-.google_nav{
+header nav{
+    padding: 6px;
+    justify-content: end;
+}
+
+.google_nav-right{
     font-size: 1.3rem;
 }
 
@@ -67,20 +71,15 @@ li a{
     background-color: rgba(209, 209, 209, 0.534);
 }
 
-.login-btn{
-    padding: 9px 15px;
+.profile-btn{
     margin-right: 8px;
-    min-width: 80px;
-    color: white;
-    font-weight: 700;
-    background: #1a73e8;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-
-.login-btn:hover{
-    background: #2b7de9;
-    box-shadow: 0 1px 2px 0 rgba(66,133,244,.3),0 1px 3px 1px rgba(66,133,244,.15);
+    margin-left: 6px;
+    background-image: url("/img/img_profile.png");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
 }
 
 /*FORMULARIO DE GOOGLE*/
@@ -116,6 +115,13 @@ li a{
     margin-bottom: 5px;
     color: #9da0a3;
     font-size: 2rem;
+}
+
+.google__microphone svg{
+    width: 24px;
+    height: 24px;
+    margin: 3px 8px 0px 8px;
+    cursor: pointer;
 }
 
 #search{
